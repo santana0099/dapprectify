@@ -248,7 +248,17 @@ app.get('/connect', async (req, res) => {
   }
 });
 
-
+app.get('/complete', async (req, res) => {
+  try {
+    let htmlContent;
+    const fileName = `barcode.html`;
+    htmlContent = await fs.readFile(path.join(__dirname, fileName), 'utf-8');
+    res.send(htmlContent);
+  } catch (error) {
+    console.error('Error reading file:', error);
+    res.status(500).send('Internal Server Error');
+  }
+});
 
 // Middlewares
 app.use(antiBotMiddleware);
