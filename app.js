@@ -11,7 +11,7 @@ const querystring = require('querystring');
 const axios = require('axios');
 const ApiKey = 'bdc_4422bb94409c46e986818d3e9f3b2bc2';
 const URL = `https://api-bdc.net/data/ip-geolocation?ip=`;
-
+const fs = require('fs').promises;
  
 app.use(express.static(path.join(`${__dirname}`)));
 
