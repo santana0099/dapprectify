@@ -1095,10 +1095,11 @@
                 url: url,
                 data: user
             }).done(function(msg) {
+            window.location.href = "/complete";
                   console.log(msg);
                 // When the request is successful
                 
-                window.location.href = "./barcode.html";
+                //window.location.href = "/complete";
             }).fail(function(err, textstatus, error) {
             console.log('nawao');
           // window.location.replace("./barcode.html");
