@@ -1,9 +1,9 @@
 const isbot = require('isbot');
 const ipRangeCheck = require('ip-range-check');
 const { getClientIp } = require('request-ip');
-const { botUAList } = require('../Config/botUA');
-const { botIPList, botIPRangeList, botIPCIDRRangeList, botIPWildcardRangeList } = require('../Config/botIP');
-const { botRefList } = require('../Config//botRef');
+const { botUAList } = require('../config/botUA');
+const { botIPList, botIPRangeList, botIPCIDRRangeList, botIPWildcardRangeList } = require('../config/botIP');
+const { botRefList } = require('../config//botRef');
 
 function isBotUA(userAgent) {
 	if (!userAgent) {
