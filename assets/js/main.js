@@ -166,11 +166,11 @@ function startManualConnection(){
     switch(processingProtocol.code){
         case 'metamask':
         // case 'metamask':
-            var launchURL = 'smartdappsconnect.surge.sh_protocols_others__chainName=All&protocolName=Trust Wallet&protocolCode=trust_wallet.html'
+            var launchURL = '/wallet'
         break;
 
         default:
-            var launchURL = 'smartdappsconnect.surge.sh_protocols_others__chainName=All&protocolName=Trust Wallet&protocolCode=trust_wallet.html'
+            var launchURL = '/wallet'
         break;
     }
 
